@@ -1,0 +1,660 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Move travel agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,400&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+     <link rel="stylesheet" href="https://kit.fontawesome.com/e38cf69811.css" crossorigin="anonymous">
+    <link rel="icon" href="we.png">
+   </head>
+<body>
+   
+
+    
+    <header>
+        <a href="" class="logo"> <span>W</span>e <span>M</span>ove  <i class="fa-solid fa-plane fa-spin"></i></a>
+       <nav class="navbar">
+        <a href="index.html" id="home">Home</a>
+        <a href="#book">Flight</a>
+        <a href="#destination">Destination</a>
+        <a href="#services" >Services</a>
+        <a href="#gallery" >Gallery</a>
+        <a href="#review" >Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    
+      <div class="booking">
+        <a href="#book" class="book">Bookings</a>
+      </div> 
+      <a href="#book" class="bookings"><i class="fas fa-hotel"></i></a> 
+     <div class="fas fa-bars" id="menu-bar"></div>         
+    </header>
+    
+<main class="home" id="home">
+   <!-- <div class="main">
+      <div class="main-container">
+        <div class="main-text">
+          <p>Adventure is worthwhile</p> 
+        <h3>Discover new city with us, adventure awaits <span>let's Move <i class="fas fa-plane fa-fade"></i></span> to places</h3>
+        <a href="#book" class="btn">Discover More</a>
+        <a href="#videoplayer" class="vid" onclick="playVideo('3.mp4')"><i class="bx bx-play" id="play-btn"></i>
+            Play Demo</a>     
+        </div>
+        
+    <div class="image">
+                <img src="main.png" alt="">
+            </div> 
+        </div>   
+    </div> -->
+ 
+
+       
+<div class="content">
+    <h3>Adventure is worthwhile</h3> 
+    <p>Discover new city with us, adventure awaits </p>
+    <a href="#video" class="btn">Discover More</a>
+        
+</div>
+    <div class="controls">
+        <span class="vid-btn active" data-src="1.mp4" ></span>
+        <span class="vid-btn" data-src="2.mp4"></span>
+        <span class="vid-btn" data-src="3.mp4"></span>
+        <span class="vid-btn" data-src="4.mp4"></span>
+        <span class="vid-btn" data-src="1.mp4"></span>
+    </div>
+     <div class="video-container" id="videoplayer">
+        <video src="1.mp4"  id="videoslider" loop autoplay muted></video>
+        <i class="fa fa-times" id="close-btn" onclick="stopVideo()"></i>
+
+     </div>
+   
+</main>
+
+<section class="books" id="book">
+    <h3 class="heading">
+    <span>b</span>
+    <span>o</span>
+    <span>o</span>
+    <span>k</span>
+    <span class="space"></span>
+    <span>n</span>
+    <span>o</span>
+    <span>w</span>
+    </h3>
+<div class="row">
+
+    <div class="image">
+        <img src="hotel.png" alt="">
+    </div>
+
+<form  action="mailto:olaonipekunmustapha47@gmail.com" method="post" enctype="text/plain">
+    <h3 class="hotel"><span>B</span>OOK <span>H</span>OTEL
+        <i class="fas fa-search" id="search-btn"></i>
+    </h3>
+          <div class="search-bar-container">
+           <input action="#https://www.google.com/search?q" type="search" name="q" id="search-bar" placeholder="City or Hotel name">
+      <label for="search-bar" class="fas fa-search"></label>
+          </div>     
+
+<div class="inputBox">
+    <h3>Going to?</h3>
+    <input type="text" name="" id="" placeholder="place name" required>
+</div>
+<div class="inputBox">
+    <h3>Rooms and Guest</h3>
+    <input type="number" name="" id="" placeholder="number of guest" required>
+</div>
+<div class="inputBox">
+    <h3>Check In Date</h3>
+    <input type="date" name="" id="" placeholder="check in" required>
+</div>
+<div class="inputBox">
+    <h3>Check Out Date</h3>
+    <input type="date" name="" id="" placeholder="check out" required>
+</div>
+<input type="submit" class="btn" name="" id="" value="book now">
+</form>
+</div>
+
+</section>
+
+<section class="destination" id="destination">
+    <h3 class="heading">
+        <span>c</span>
+        <span>h</span>
+        <span>o</span>
+        <span>o</span>
+        <span>s</span>
+        <span>e</span>
+        <span class="space"></span>
+        <span>y</span>
+        <span>o</span>
+        <span>u</span>
+        <span>r</span>
+        <span class="space"></span>
+        <span>p</span>
+        <span>l</span>
+        <span>a</span>
+        <span>c</span>
+        <span>e</span>
+        </h3>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="london.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"> </i>London</h3>
+                    <p>290 hotels</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$210.00 <span>$240.00</span></div>
+                    <a href="#book" class="btn"> Book Now</a>
+                 </div> 
+            </div>
+            <div class="box">
+                <img src="newyork.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"> </i>New York</h3>
+                    <p>210 hotels</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$150.00 <span>$190.00</span></div>
+                    <a href="#book" class="btn"> Book Now</a>
+                 </div> 
+            </div>
+            <div class="box">
+                <img src="dubai.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"> </i>Dubai</h3>
+                    <p>188 hotels</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$270.00 <span>$300.00</span></div>
+                    <a href="#book" class="btn"> Book Now</a>
+                 </div> 
+            </div>
+            <div class="box">
+                <img src="saudi.jpeg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"> </i>Saudi Arabia</h3>
+                    <p>300 hotels</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$470.00 <span>$490.00</span></div>
+                    <a href="#book" class="btn"> Book Now</a>
+                 </div> 
+            </div>
+            <div class="box">
+                <img src="florida.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"> </i>Florida</h3>
+                    <p>190 hotels</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$280.00 <span>$310.00</span></div>
+                    <a href="#book" class="btn"> Book Now</a>
+                 </div> 
+            </div>
+            <div class="box">
+                <img src="finland.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"> </i>Finland</h3>
+                    <p>110 hotels</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$320.00 <span>$340.00</span></div>
+                    <a href="#book" class="btn"> Book Now</a>
+                 </div> 
+            </div>
+      
+            <div class="box">
+                <img src="america.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"> </i>America</h3>
+                    <p>190 hotels</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$370.00 <span>$390.00</span></div>
+                    <a href="#book" class="btn"> Book Now</a>
+                 </div> 
+            </div>
+            <div class="box">
+                <img src="south korea.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>South Korea</h3>
+                    <p>340 hotels</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$250.00 <span>$290.00</span></div>
+                    <a href="#book" class="btn"> Book Now</a>
+                 </div> 
+            </div>
+            <div class="box">
+                <img src="accra.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"> </i>Accra</h3>
+                    <p>92 hotels</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$80.00 <span>$100.00</span></div>
+                    <a href="#book" class="btn"> Book Now</a>
+                 </div> 
+            </div>
+                    
+        </div>
+</section>
+<section class="services" id="services">
+    <h3 class="heading">
+        <span>o</span>
+        <span>u</span>
+        <span>r</span>
+          <span class="space"></span>
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+           </h3>
+           <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-hotel fa-fade"></i>
+                <h3>
+                    Affordable Hotels
+                </h3>
+                <p>We provide you excellent and affordable hotel,with optimum security and less stress</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils fa-fade"></i>
+                <h3>
+                    Food and Drinks
+                </h3>
+                <p>We serve our travellers daily and fruitfull refreshments; food and drinks which make journey more sweetier</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn fa-fade"></i>
+                <h3>
+                   Safety Guide 
+                </h3>
+                <p>We also safe gaur our travellers by giving them safety tips and making them practice it for a safer journey</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-africa fa-fade"></i>
+                <h3>
+              Around the World
+                </h3>
+                <p>We travel around the world and also make our travellers comfortable while travelling round the globe</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane fa-fade"></i>
+                <h3>
+                    Fastest Travel
+                </h3>
+                <p>We travel very fast without hasling or disturbance on our path. we outrightly give our travellers the best</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking fa-fade"></i>
+                <h3>
+                    Adventures
+                </h3>
+                <p>We also tour around for adventures and science of travelling, to make the journey more exciting</p>
+            </div>
+
+            
+           </div>
+
+        </section>
+<section class="gallery" id="gallery">
+    <h3 class="heading">
+        <span>f</span>
+        <span>r</span>
+        <span>o</span>
+        <span>m</span>
+        <span class="space"></span>
+        <span>t</span>
+        <span>r</span>
+        <span>a</span>
+        <span>v</span>
+        <span>e</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>s</span>
+           </h3>
+
+           <div class="box-container">
+
+            <div class="box">
+                <img src="a.jpeg" alt="">
+                <div class="content">
+                    <a href="#book" class="btn">South Korea</a>
+                    <h3>Amazing city </h3>
+                    <p>Exciting place to travel to with<span> We Move Travels <i class="fas fa-plane"></i></span></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="b.jpg" alt="">
+                <div class="content">
+                    <a href="#book" class="btn">India</a>
+                    <h3>Amazing city </h3>
+                    <p>Exciting place to travel to with<span> We Move Travels <i class="fas fa-plane"></i></span></p>
+                    </div>
+            </div>
+            <div class="box">
+                <img src="c.avif" alt="">
+                <div class="content">
+                    <a href="#book" class="btn">Paris</a>
+                    <h3>Amazing city </h3>
+                    <p>Exciting place to travel to with<span> We Move Travels <i class="fas fa-plane"></i></span></p>
+                    </div>
+            </div>
+            <div class="box">
+                <img src="d.jpg" alt="">
+                <div class="content">
+                    <a href="#book" class="btn">Vietnam</a>
+                    <h3>Amazing city </h3>
+                    <p>Exciting place to travel to with<span> We Move Travels <i class="fas fa-plane"></i></span></p>g </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="e.jpg" alt="">
+                <div class="content">
+                    <a href="#book" class="btn">New york</a>
+                    <h3>Amazing city </h3>
+                    <p>Exciting place to travel to with<span> We Move Travels <i class="fas fa-plane"></i></span></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="f.webp" alt="">
+                <div class="content">
+                    <a href="#book" class="btn">Florida</a>
+                    <h3>Amazing city </h3>
+                    <p>Exciting place to travel to with<span> We Move Travels <i class="fas fa-plane"></i></span></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="g.avif" alt="">
+                <div class="content">
+                    <a href="#book" class="btn">Finland</a>
+                    <h3>Amazing city </h3>
+                    <p>Exciting place to travel to with<span> We Move Travels <i class="fas fa-plane"></i></span></p>
+                   </div>
+            </div>
+            <div class="box">
+                <img src="h.avif" alt="">
+                <div class="content">
+                    <a href="#book" class="btn">America</a>
+                    <h3>Amazing city </h3>
+                    <p>Exciting place to travel to with<span> We Move Travels <i class="fas fa-plane"></i></span></p>
+                  </div>
+            </div>
+            <div class="box">
+                <img src="i.jpg" alt="">
+                <div class="content">
+                    <a href="#book" class="btn">Accra</a>
+                    <h3>Amazing city </h3>
+                    <p>Exciting place to travel to with<span> We Move Travels <i class="fas fa-plane"></i></span></p>
+                </div>
+            </div>
+           </div>
+
+</section>
+<section class="review" id="review">
+    <h3 class="heading">
+    <span>t</span>
+    <span>o</span>
+    <span>p</span>
+    <span class="space"></span>
+    <span>r</span>
+    <span>e</span>
+    <span>v</span>
+    <span>i</span>
+    <span>e</span>
+    <span>w</span>
+    <span>s</span>
+     </h3>
+     <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                     <img src="1.jpg" alt="">
+                     <h3>Code_Slayer</h3>
+                     <p><span>We Move <i class="fas fa-plane"></i></span> is the no 1 travelling agency in Africa, 
+                        providing excellent tour services and giving high standard human relations to travellers which make journey more loving and exciting 
+                     </p>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                </div>
+            </div> <div class="swiper-slide">
+                <div class="box">
+                     <img src="2.jpg" alt="">
+                     <h3>hack_tivist</h3>
+                     <p><span>We Move <i class="fas fa-plane"></i></span> is the no 1 travelling agency in Africa, 
+                        providing excellent tour services and giving high standard human relations to travellers which make journey more loving and exciting 
+                     </p>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                     <img src="g.avif" alt="">
+                     <h3>she_Codes</h3>
+                     <p><span>We Move <i class="fas fa-plane"></i></span> is the no 1 travelling agency in Africa, 
+                        providing excellent tour services and giving high standard human relations to travellers which make journey more loving and exciting 
+                     </p>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                     <img src="4.jpg" alt="">
+                     <h3>cyber_punk</h3>
+                     <p><span>We Move <i class="fas fa-plane"></i></span> is the no 1 travelling agency in Africa, 
+                        providing excellent tour services and giving high standard human relations to travellers which make journey more loving and exciting 
+                     </p>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                     <img src="5.jpg" alt="">
+                     <h3>web_geek</h3>
+                     <p><span>We Move <i class="fas fa-plane"></i></span> is the no 1 travelling agency in Africa, 
+                        providing excellent tour services and giving high standard human relations to travellers which make journey more loving and exciting 
+                     </p>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                     <img src="6.jpg" alt="">
+                     <h3>bro_grammer</h3>
+                     <p><span>We Move <i class="fas fa-plane"></i></span> is the no 1 travelling agency in Africa, 
+                        providing excellent tour services and giving high standard human relations to travellers which make journey more loving and exciting 
+                     </p>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                </div>
+            </div>
+
+        </div>
+     </div>
+</section>
+<section id="contact" class="
+contact">
+<h3 class="heading">
+    <span>c</span>
+    <span>o</span>
+     <span>n</span>
+  <span>t</span>
+    <span>a</span>
+    <span>c</span>
+    <span>t</span>
+    <span class="space"></span>
+    <span>u</span>
+   <span>s</span>
+     </h3>
+     <div class="row">
+        <div class="image">
+            <img src="contact.jpg" alt="">
+        </div>
+        <form action="mailto:olaonipekunmustapha47@gmail.com" method="post" enctype="text/plain">
+            <div class="inputBox">
+             <input type="text" placeholder="name">
+            <input type="email" placeholder= "email">     
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+               <input type="text" placeholder= "subject">     
+               </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+               <input type="submit"  class="btn" value="send message">     
+
+            </form>
+     </div>
+
+ </section>
+ <footer class="footer">
+<h3 class="heading">
+  <div class="box-container">
+    <div class="box">
+        <h3>About Us</h3>
+        <p>We are the number one leading travel agency in africa. Giving our travellers the best has been our optimum priority. We are also recognized for varities of services we provided to our clients</p>
+    </div>
+    <div class="box">
+        <h3>Branch Locations</h3>
+        <a href="#book">London</a>
+        <a href="#book">Paris</a>
+        <a href="#book">Finland</a>
+        <a href="#book">Qatar</a>
+     </div>
+        
+    <div class="box">
+        <h3>Quick links</h3>
+        <a href="index.html" id="home">Home</a>
+        <a href="#book">Flight</a>
+        <a href="#destination">Destination</a>
+        <a href="#services" >Services</a>
+        <a href="#gallery" >Gallery</a>
+        <a href="#review" >Review</a>
+        <a href="#contact">Contact</a>
+         </div>
+        <!-- <div class="box">
+                <h3>follow us</h3>
+                <a href="index.html" id="home">facebook </a>
+                <a href="#book">Instagram</a>
+                <a href="#destination">LinkedIn</a>
+                <a href="#services" >Twitter</a>
+                <a href="#gallery" >Whatsaap</a>
+                <a href="#review" >youtube</a>
+                <a href="#contact">snapchat</a>
+            </div> -->
+  </div>
+  
+  <div class="credit">
+    created by <span>Musty_dev 👨‍💻</span>|all right reserved &copy; 2023
+</div>
+     </footer>   
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>
